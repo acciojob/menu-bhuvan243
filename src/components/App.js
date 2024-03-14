@@ -7,10 +7,14 @@ const App = () => {
   const [displayList, setDisplayList] = useState(menuList);
   //   const categories = ["all", "breakfast", "lunch", "shakes"];
   const categories = [
-    { type: "all", id: "all" },
-    { type: "breakfast", id: "filter-btn-1" },
-    { type: "lunch", id: "filter-btn-2" },
-    { type: "shakes", id: "filter-btn-3" },
+    { type: "all", id: "all", data_test_id: "menu-item-all" },
+    {
+      type: "breakfast",
+      id: "filter-btn-1",
+      data_test_id: "menu-item-breakfast",
+    },
+    { type: "lunch", id: "filter-btn-2", data_test_id: "menu-item-lunch" },
+    { type: "shakes", id: "filter-btn-3", data_test_id: "menu-item-shakes" },
   ];
   function showMenu(event) {
     const selectedCategory = event.target.getAttribute("name");

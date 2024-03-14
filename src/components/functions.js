@@ -5,7 +5,6 @@ export function capitalizeFirstLetter(str) {
     .map(capitalize)
     .join(" ");
     return capitalizedResult;
-  
 }
 
 function capitalize(str) {
