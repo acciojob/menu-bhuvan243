@@ -5,7 +5,13 @@ import { capitalizeFirstLetter } from "./functions";
 
 const App = () => {
   const [displayList, setDisplayList] = useState(menuList);
-  const categories = ["all", "breakfast", "lunch", "shakes"];
+  //   const categories = ["all", "breakfast", "lunch", "shakes"];
+  const categories = [
+    { type: "all", id: "all" },
+    { type: "breakfast", id: "filter-btn-1" },
+    { type: "lunch", id: "filter-btn-2" },
+    { type: "shakes", id: "filter-btn-3" },
+  ];
   function showMenu(event) {
     const selectedCategory = event.target.getAttribute("name");
     if (selectedCategory === "all") {
@@ -22,8 +28,13 @@ const App = () => {
       <h1>Our Menu</h1>
       <ul>
         {categories.map((category, index) => (
-          <li name={category} key={index} onClick={showMenu}>
-            {capitalizeFirstLetter(category)}
+          <li
+            name={category.type}
+            id={category.id}
+            key={index}
+            onClick={showMenu}
+          >
+            {capitalizeFirstLetter(category.type)}
           </li>
         ))}
       </ul>
