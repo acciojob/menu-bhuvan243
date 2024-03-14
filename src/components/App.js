@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./../styles/App.css";
 import menuList from "./../data/menuList.json";
+import { capitalizeFirstLetter } from "./functions";
 
 const App = () => {
   const [displayList, setDisplayList] = useState(menuList);
@@ -22,7 +23,7 @@ const App = () => {
       <ul>
         {categories.map((category, index) => (
           <li name={category} key={index} onClick={showMenu}>
-            {category}
+            {capitalizeFirstLetter(category)}
           </li>
         ))}
       </ul>
@@ -33,7 +34,7 @@ const App = () => {
               <img src={item.img} />
               <div>
                 <div className="heading">
-                  <h5>{item.title}</h5>
+                  <h5>{capitalizeFirstLetter(item.title)}</h5>
                   <span>${item.price}</span>
                 </div>
                 <p>{item.desc}</p>
