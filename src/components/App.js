@@ -35,6 +35,7 @@ const App = () => {
           <li
             name={category.type}
             id={category.id}
+            data-test-id={category.data_test_id}
             key={index}
             onClick={showMenu}
           >
