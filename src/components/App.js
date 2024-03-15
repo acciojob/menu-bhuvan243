@@ -31,8 +31,8 @@ const App = () => {
       );
       setDisplayList(filteredList);
     }
-    const selectedCategoryId = event.target.className;
-    setActiveCategory(selectedCategoryId);
+    // const selectedCategoryId = event.target.className;
+    // setActiveCategory(selectedCategoryId);
   }
   return (
     <div>

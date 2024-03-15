@@ -6,7 +6,8 @@ const CategoryButton = ({ category, showMenu, activeCategory }) => {
   return (
     <li
       name={category.type}
-      id={activeCategory === category.id ? category.id : ""}
+      id={category.id}
+    //   id={activeCategory === category.id ? category.id : ""}
       className={activeCategory === category.id ? "" : category.id}
       data-test-id={category.data_test_id}
       onClick={showMenu}
