@@ -1,5 +1,5 @@
 export function capitalizeFirstLetter(str) {
-  console.log(str);
+  // console.log(str);
   const capitalizedResult = str
     .split(" ")
     .map(capitalize)

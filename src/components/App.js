@@ -42,7 +42,7 @@ const App = () => {
       <ul className="menu-container">
         {displayList.map((item, index) => {
           return (
-            <li key={index} className="card">
+            <li key={index} id={item.htmlId} className="card">
               <img src={item.img} />
               <div>
                 <div className="heading">
