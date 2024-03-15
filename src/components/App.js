@@ -39,10 +39,10 @@ const App = () => {
           </li>
         ))}
       </ul>
-      <div className="menu-container">
+      <ul className="menu-container">
         {displayList.map((item, index) => {
           return (
-            <div key={index} className="card">
+            <li key={index} className="card">
               <img src={item.img} />
               <div>
                 <div className="heading">
@@ -51,10 +51,10 @@ const App = () => {
                 </div>
                 <p>{item.desc}</p>
               </div>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 };
