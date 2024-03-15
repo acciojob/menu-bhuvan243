@@ -8,11 +8,7 @@ const App = () => {
   //   const categories = ["all", "breakfast", "lunch", "shakes"];
   const categories = [
     { type: "all", id: "all", data_test_id: "menu-item-all" },
-    {
-      type: "breakfast",
-      id: "filter-btn-1",
-      data_test_id: "menu-item-breakfast",
-    },
+    { type: "breakfast", id: "filter-btn-1", data_test_id: "menu-item-breakfast"},
     { type: "lunch", id: "filter-btn-2", data_test_id: "menu-item-lunch" },
     { type: "shakes", id: "filter-btn-3", data_test_id: "menu-item-shakes" },
   ];
