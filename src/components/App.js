@@ -37,7 +37,6 @@ const App = () => {
   return (
     <div>
       <h1>Our Menu</h1>
-      <ul>
         {categories.map((category, index) => (
           <CategoryButton
             category={category}
@@ -46,7 +45,6 @@ const App = () => {
             activeCategory={activeCategory}
           />
         ))}
-      </ul>
       <div className="menu-container">
         {displayList.map((item, index) => (
           <Card item={item} key={index} />

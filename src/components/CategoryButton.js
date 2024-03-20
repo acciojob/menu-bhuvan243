@@ -4,7 +4,7 @@ import { capitalizeFirstLetter } from "./functions";
 const CategoryButton = ({ category, showMenu, activeCategory }) => {
   console.log("Inside category button", activeCategory);
   return (
-    <li
+    <button
       name={category.type}
       id={category.id}
     //   id={activeCategory === category.id ? category.id : ""}
@@ -13,7 +13,7 @@ const CategoryButton = ({ category, showMenu, activeCategory }) => {
       onClick={showMenu}
     >
       {capitalizeFirstLetter(category.type)}
-    </li>
+    </button>
   );
 };
 
